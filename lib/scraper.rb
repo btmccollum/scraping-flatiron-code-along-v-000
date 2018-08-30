@@ -20,7 +20,6 @@ class Scraper
       course.schedule = page.css(".date").text
       course.description = page.css("p").text
     end
-    self
   end
 
   def print_courses
