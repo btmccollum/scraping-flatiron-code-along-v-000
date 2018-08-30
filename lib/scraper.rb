@@ -36,7 +36,7 @@ end
 
   def get_page
     Nokogiri::HTML(open("https://learn-co-curriculum.github.io/site-for-scraping/courses"))
-    # 
+    #
     # page.css(".post").each do |post|
     #   course = Course.new
     #   course.title = post.css("h2").text
@@ -71,4 +71,3 @@ end
 
 binding.pry
 Scraper.new.get_page
-
